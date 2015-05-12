@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+<session-factory>
+
+<!-- hibernate的方言，用来确定连接的数据库 -->
+
+<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+
+<!-- 在使用hibernate时会显示相应的SQL -->
+
+<property name="hibernate.show_sql">true</property>
+
+<!--生成数据表的策略-->
+<property name="hibernate.format_sql">true</property>
+
+<!--配置自动提交-->
+<property name="hibernate.connection.autocommit">true</property>
+
+<!-- 会自动完成类到数据表的转换 -->
+
+<property name="hibernate.hbm2ddl.auto">update</property>
+
+<mapping class="xmc.cineplex.model.User"/>
+<mapping class="xmc.cineplex.model.Plan"/>
+<mapping class="xmc.cineplex.model.Payment"/>
+<mapping class="xmc.cineplex.model.Consumption"/>
+<mapping class="xmc.cineplex.model.Account"/>
+<mapping class="xmc.cineplex.model.Film"/>
+<mapping class="xmc.cineplex.model.TicketManage"/>
+<mapping class="xmc.cineplex.model.Question"/>
+<mapping class="xmc.cineplex.model.QuestionMap"/>
+<mapping class="xmc.cineplex.model.Answer"/>
+<mapping class="xmc.cineplex.model.AnswerMap"/>
+<mapping class="xmc.cineplex.model.Seat"/>
+
+</session-factory>
+
+</hibernate-configuration>
+
+
+
+
+
+
+
+
+

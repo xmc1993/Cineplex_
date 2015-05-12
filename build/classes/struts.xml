@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<package name="Cineplex_" extends="struts-default">
+
+<action name="login" class="LoginAction">
+<result name="success">/cineplex/ScanningFilm.jsp</result>
+<result name="failure">/cineplex/Fail.jsp</result>
+<result name="invalid">/cineplex/Tip_invalid.jsp</result>
+<result name="register">/cineplex/Register.jsp</result>
+</action>
+
+<action name="/*" class="IndexAction">
+<result>/cineplex/Login.jsp</result>
+</action>
+
+<action name="register" class="RegisterAction">
+<result>/cineplex/Tip_register.jsp</result>
+</action>
+
+<action name="bindBankCard" class="BindBankCardAction">
+<result>/cineplex/Recharge.jsp</result>
+</action>
+
+<action name="enterRecharge" class="RechargeAction">
+<result name="bindCard">/cineplex/BindBankCard.jsp</result>
+<result name="recharge">/cineplex/Recharge.jsp</result>
+</action>
+
+
+<action name="recharge" class="RechargeAction" method="recharge">
+<result>/cineplex/Tip_invalid.jsp</result>
+<result>/cineplex/ScanningFilm.jsp</result>
+</action>
+
+<action name="createPlan" class="CreatePlanAction">
+<result>/cineplex/Administrator.jsp</result>
+</action>
+
+<action name="admin" class="AdminAction">
+<result>/cineplex/AdminLogin.jsp</result>
+</action>
+
+<action name="adminHomePage" class="AdminAction" method="adminHomePage">
+<result>/cineplex/Administrator.jsp</result>
+</action>
+
+<action name="managerHomePage" class="AdminAction" method="managerHomePage">
+<result>/cineplex/Manager.jsp</result>
+</action>
+
+
+<action name="adminLogin" class="AdminLoginAction">
+<result name="server">/cineplex/Administrator.jsp</result>
+<result name="manager">/cineplex/Manager.jsp</result>
+</action>
+
+<action name="checkPlan" class="CheckPlanAction" method="processPlan">
+<result>/cineplex/CheckPlan.jsp</result>
+</action>
+
+<action name="enterCheck" class="CheckPlanAction">
+<result name="checkPlan">/cineplex/CheckPlan.jsp</result>
+</action>
+
+<action name="currentFilm" class="ServerAction">
+<result>/cineplex/CurrentFilm.jsp</result>
+</action>
+
+<action name="filmInfo" class="ServerAction" method="filmInfo">
+<result name="filmInfo">/cineplex/FilmSession.jsp</result>
+</action>
+
+<action name="enterSale" class="ServerAction" method="enterSale">
+<result name="sale">/cineplex/SaleTicket.jsp</result>
+</action>
+
+<action name="saleTicket" class="SaleTicketAction">
+<result>/cineplex/FilmSession.jsp</result>
+<result name="member">/cineplex/SaleTicket_Member.jsp</result>
+</action>
+
+<action name="enterQuestion" class="PutQuestionAction" method="enterQuestion">
+<result>/cineplex/PutQuestion.jsp</result>
+</action>
+
+<action name="putQuestion" class="PutQuestionAction">
+<result>/cineplex/Administrator.jsp</result>
+</action>
+
+<action name="enterCreatePlan" class="CreatePlanAction" method="enterCreatePlan">
+<result>/cineplex/CreatePlan.jsp</result>
+</action>
+
+<action name="userFilmInfo" class="BuyTicketAction">
+<result>/cineplex/FilmInfo.jsp</result>
+</action>
+
+<action name="buyTicket" class="BuyTicketAction" method="buyTicket">
+<result>/cineplex/BuyTicket_Member.jsp</result>
+</action>
+
+<action name="enterBuy" class="EnterBuyAction">
+<result>/cineplex/BuyTicket.jsp</result>
+</action >
+
+<action name="memberInfo" class="MemberAction">
+<result>/cineplex/MemberInfo.jsp</result>
+</action>
+
+<action name="enterModify" class="ModifyPlanAction" method="enterModify">
+<result>/cineplex/ModifyPlan.jsp</result>
+</action>
+
+<action name="modifyPlan" class="ModifyPlanAction">
+<result>/cineplex/ModifyPlan.jsp</result>
+<result name="modify">/cineplex/ReusePlan.jsp</result>
+</action>
+
+<action name="resavePlan" class="ResavePlanAction">
+<result>/cineplex/ModifyPlan.jsp</result>
+</action>
+
+<action name="enterAnswer" class="AnswerQuestionAction" method="enterAnswer">
+<result>/cineplex/AnswerQuestion.jsp</result>
+</action>
+
+<action name="answer" class="AnswerQuestionAction">
+<result>/cineplex/ScanningFilm.jsp</result>
+</action>
+
+<action name="enterSearch" class="ServerAction" method="enterSearch">
+<result>/cineplex/SearchMemberInfo.jsp</result>
+</action>
+
+<action name="search" class="ServerAction" method="searchResult">
+<result>/cineplex/MemberInfoResult.jsp</result>
+</action>
+
+<action name="enterRegister" class="RegisterAction" method="enterRegister">
+<result>/cineplex/Register.jsp</result>
+</action>
+
+<action name="enterModifyProfile" class="ModifyProfileAction" method="enterModifyProfile">
+<result>/cineplex/ModifyProfile.jsp</result>
+</action>
+
+<action name="modifyProfile" class="ModifyProfileAction">
+<result>/cineplex/MemberInfo.jsp</result>
+</action>
+
+<action name="exchange" class="MemberAction" method="exchange">
+<result>/cineplex/MemberInfo.jsp</result>
+</action>
+
+<action name="enterNewSale" class="NewSaleAction" method="enterNewSale">
+<result>/cineplex/Test.jsp</result>
+</action>
+
+<action name="newSale" class="NewSaleAction">
+<result>/cineplex/SaleTicket.jsp</result>
+</action>
+
+<action name="memberSale" class="SaleTicketAction" method="memberSale">
+<result name="nsf">/cineplex/Warnning_NSF.jsp</result>
+<result>/cineplex/Administrator.jsp</result>
+</action>
+
+<action name="logout" class="LogoutAction">
+<result>/cineplex/Login.jsp</result>
+</action>
+
+<action name="memHomePage" class="MemberAction" method="enterHomePage">
+<result>/cineplex/ScanningFilm.jsp</result>
+</action>
+
+<action name="afterCount" class="BuyTicketAction" method="afterCount">
+<result>/cineplex/ScanningFilm.jsp</result>
+<result name="nsf">/cineplex/Warnning_NSF.jsp</result>
+</action>
+
+<action name="ageRatio" class="ChartAction" method="ageRatio">
+<result>/cineplex/Chart_age.jsp</result>
+</action>
+
+<action name="sexRatio" class="ChartAction" method="sexRatio">
+<result>/cineplex/Chart_sex.jsp</result>
+</action>
+
+<action name="consumeRatio" class="ChartAction" method="consumeRatio">
+<result>/cineplex/Chart_consume.jsp</result>
+</action>
+
+<action name="activityRatio" class="ChartAction" method="activityRatio">
+<result>/cineplex/Chart_activity.jsp</result>
+</action>
+
+<action name="memberRatio" class="ChartAction" method="memberRatio">
+<result>/cineplex/Chart_member.jsp</result>
+</action>
+
+<action name="monthChart" class="ChartAction" method="monthChart">
+<result>/cineplex/Chart_month.jsp</result>
+</action>
+
+<action name="businessChart" class="ChartAction" method="businessChart">
+<result>/cineplex/Chart_business.jsp</result>
+</action>
+
+<action name="filmChart" class="ChartAction" method="filmChart">
+<result>/cineplex/Chart_film.jsp</result>
+</action>
+
+<action name="fullChart" class="ChartAction" method="fullChart">
+<result>/cineplex/Chart_full.jsp</result>
+</action>
+
+<action name="seatChart" class="ChartAction" method="seatChart">
+<result>/cineplex/Chart_interest.jsp</result>
+</action>
+
+<action name="timeChart" class="ChartAction" method="timeChart">
+<result>/cineplex/Chart_time.jsp</result>
+</action>
+
+<action name="areaChart" class="ChartAction" method="areaChart">
+<result>/cineplex/Chart_area.jsp</result>
+</action>
+
+<action name="adminLogout" class="AdminLogoutAction">
+<result>/cineplex/AdminLogin.jsp</result>
+</action>
+
+<action name="enterDown" class="ServerAction" method="enterDown">
+<result>/cineplex/DownFilm.jsp</result>
+</action>
+
+<action name="downFilm" class="ServerAction" method="downFilm">
+<result>/cineplex/Success_down.jsp</result>
+</action>
+
+</package>
+</struts>

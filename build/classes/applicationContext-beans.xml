@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+         xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd  
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd  
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd  
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd" >
+
+	<bean id="IndexAction" class="xmc.cineplex.action.IndexAction" scope="prototype" >
+	</bean>
+	
+	<bean id="AdminAction" class="xmc.cineplex.action.AdminAction" scope="prototype" >
+	</bean>
+	
+	<bean id="LoginAction" class="xmc.cineplex.action.LoginAction" scope="prototype">
+	</bean>
+	
+	<bean id="AdminLoginAction" class="xmc.cineplex.action.AdminLoginAction" scope="prototype">
+	</bean>
+
+	<bean id="RegisterAction" class="xmc.cineplex.action.RegisterAction" scope="prototype">
+	</bean>
+	
+	<bean id="BindBankCardAction" class="xmc.cineplex.action.BindBankCardAction" scope="prototype">
+	</bean>
+	
+	<bean id="RechargeAction" class="xmc.cineplex.action.RechargeAction" scope="prototype">
+	</bean>
+
+	<bean id="CreatePlanAction" class="xmc.cineplex.action.CreatePlanAction" scope="prototype">
+	</bean>
+	
+	<bean id="CheckPlanAction" class="xmc.cineplex.action.CheckPlanAction" scope="prototype">
+	</bean>
+	
+	<bean id="ServerAction" class="xmc.cineplex.action.ServerAction" scope="prototype">
+	</bean>
+	
+	<bean id="SaleTicketAction" class="xmc.cineplex.action.SaleTicketAction" scope="prototype">
+	</bean>
+	
+	<bean id="PutQuestionAction" class="xmc.cineplex.action.PutQuestionAction" scope="prototype">
+	</bean>
+	
+	<bean id="BuyTicketAction" class="xmc.cineplex.action.BuyTicketAction" scope="prototype">
+	</bean>
+	
+	<bean id="EnterBuyAction" class="xmc.cineplex.action.EnterBuyAction" scope="prototype">
+	</bean>
+	
+	<bean id="MemberAction" class="xmc.cineplex.action.MemberAction" scope="prototype">
+	</bean>
+	
+	<bean id="ModifyPlanAction" class="xmc.cineplex.action.ModifyPlanAction" scope="prototype">
+	</bean>
+	
+	<bean id="ResavePlanAction" class="xmc.cineplex.action.ResavePlanAction" scope="prototype">
+	</bean>
+	
+	<bean id="AnswerQuestionAction" class="xmc.cineplex.action.AnswerQuestionAction" scope="prototype">
+	</bean>
+	
+	<bean id="ModifyProfileAction" class="xmc.cineplex.action.ModifyProfileAction" scope="prototype">
+	</bean>
+	
+	<bean id="NewSaleAction" class="xmc.cineplex.action.NewSaleAction" scope="prototype">
+	</bean>
+	
+	<bean id="LogoutAction" class="xmc.cineplex.action.LogoutAction" scope="prototype">
+	</bean>
+	
+	<bean id="ChartAction" class="xmc.cineplex.action.ChartAction" scope="prototype">
+	</bean>
+	
+	<bean id="AdminLogoutAction" class="xmc.cineplex.action.AdminLogoutAction" scope="prototype">
+	</bean>
+	
+</beans>
