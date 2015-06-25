@@ -33,7 +33,7 @@
          <li><a href="enterRecharge.action">充值</a></li>
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
-	  <li class="active"><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-log-in"></span><jsp:getProperty name="user" property="name"/></a></li>
+	  <li class="active"><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-user"></span><jsp:getProperty name="user" property="name"/></a></li>
 	  <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a><li>
 	  <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a><li>
 	  <li><a href="logout.action"><span class="glyphicon glyphicon-off"></span></a><li>
@@ -43,18 +43,20 @@
 	</nav>
 	<div   style="height:130px;background:url('images/bg.jpg')">
 	</div>
+
 	<div class="container">
 	<div class="row" style="height:40px">
 	</div >
 	<div class="row">
 	<div class="col-xs-2">
 	</div>
-	<div class="col-xs-8" style="background-color:#FFFFFF">
 	
+	<div class="col-xs-8" style="background-color:#FFFFFF">
 	
 	<p></p>
 	<form role="form" method="post" action="answer.action">
 	<legend><strong>活动问题</strong></legend>
+
 <%
 if(questionList.getQuestionList().size()==0){
 
@@ -98,20 +100,20 @@ if(questionList.getQuestionList().size()==0){
 if(questionList.getQuestionList().size()!=0){
 %>
 		<button class="btn-block btn-lg btn-success" type="submit" onclick='sub()' >提交</button>
+			<br/>
 <%
 }
 %>
 		</div>
 		</form>
-		<p></p>
-		<br/>
-		
-		
-		
 	</div>
+
 	<div class="col-xs-2">
 	</div>
 	</div>
+	
+	<div class="row" style="height:20px">
+	</div >
 	</div>
 	
   </body>

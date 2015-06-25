@@ -44,8 +44,10 @@
 	<div class="row" style="height:40px">
 	</div >
 	<div class="row">
+	<div class="col-xs-2">
+	</div>
 	<!-- Tab的使用范围-->
-	<div class="col-xs-9">
+	<div class="col-xs-8">
 	<ul id="myTab" class="nav nav-tabs">
     <li class="active">
       <a href="#home" data-toggle="tab">
@@ -56,6 +58,7 @@
    <li><a href="#pay" data-toggle="tab">充值记录</a></li>
 </ul>
 <div id="myTabContent" class="tab-content">
+
    <div class="tab-pane fade in active" id="home">
     <div class="panel panel-primary">
 	<div class="panel-heading">
@@ -159,13 +162,7 @@
    </tbody>
 </table>
    </div>
-   <div class="tab-pane fade" id="jmeter">
-      <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
-   </div>
-   <div class="tab-pane fade" id="ejb">
-      <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
-      </p>
-   </div>
+   
 	</div>
 	</div>
 	<!-- Tab的结束范围。 -->
