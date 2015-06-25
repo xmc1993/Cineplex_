@@ -47,19 +47,19 @@
 		<legend><strong>问题制定</strong></legend>
 		<div class="form-group">
 		<label>题目：</label>
-		<textarea class="form-control" name="question.content" rows="3" placeholder="write your question here."></textarea>
+		<textarea class="form-control" name="question.content" rows="3" placeholder="活动问题."></textarea>
 		</div>
         <div class="form-group">
 		<label>选项一：</label>
-		<input type="text" class="form-control" name="question.option1" placeholder="option 1"/>
+		<input type="text" class="form-control" name="question.option1" placeholder="选项一."/>
 		</div>
 		<div class="form-group">
 		<label>选项二：</label>
-		<input type="text" class="form-control" name="question.option2" placeholder="option 2"/>
+		<input type="text" class="form-control" name="question.option2" placeholder="选项二."/>
 		</div>
 		<div class="form-group">
 		<label>选项三：</label>
-		<input type="text" class="form-control" name="question.option3" placeholder="option 3"/>
+		<input type="text" class="form-control" name="question.option3" placeholder="选项三."/>
 		</div>
 		<div class="form-group">
 		<p><label>匹配的放映计划：</label></p>

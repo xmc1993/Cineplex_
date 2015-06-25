@@ -46,7 +46,7 @@
 	<div class="col-xs-4" style="background-color:#FFFFFF">
 	<p></p>
 	<form role="form" action="modifyProfile.action" method="post">
-		<legend><strong>输入注册信息</strong></legend>
+		<legend><strong>修改个人信息</strong></legend>
 		<div class="form-group">
 		<label>用户名：</label>
 		<input type="text" class="form-control" name="user.name" value='<jsp:getProperty name="user" property="name"/>' disabled/>
