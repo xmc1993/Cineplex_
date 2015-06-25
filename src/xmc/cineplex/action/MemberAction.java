@@ -44,6 +44,13 @@ public class MemberAction extends BaseAction  implements Action{
 		return SUCCESS;
 	}
 	
+	public String personInfo(){
+		User user=(User)session.get("user");
+		Account account=accountServiceBean.getAccount(user.getId());
+		session.put("account", account);
+		return SUCCESS;
+	}
+	
 	public String exchange(){
 		User user=(User)session.get("user");
 		Account account=accountServiceBean.getAccount(user.getId());

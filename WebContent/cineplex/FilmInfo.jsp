@@ -21,15 +21,14 @@
    </div>
    <div>
       <ul class="nav navbar-nav">
-         <li class="active"><a href="#">首页</a></li>
-         <li><a href="memberInfo.action">个人信息</a></li>
+         <li class="active"><a href="memHomePage.action">首页</a></li>
+         <li><a href="memberInfo.action">账号信息</a></li>
          <li><a href="enterAnswer.action">参与活动</a></li>
          <li><a href="enterRecharge.action">充值</a></li>
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
-	  <li class="active"><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-user"></span><jsp:getProperty name="user" property="name"/></a></li>
+	  <li class="active"><a class="navbar-brand" href="personInfo.action"><span class="glyphicon glyphicon-user"></span><jsp:getProperty name="user" property="name"/></a></li>
 	  <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a><li>
-	  <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a><li>
 	  <li><a href="logout.action"><span class="glyphicon glyphicon-off"></span></a><li>
 	  <li><a>&nbsp </a></li>
 	  </ul>

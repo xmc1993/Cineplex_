@@ -107,6 +107,10 @@
 <result>/cineplex/BuyTicket.jsp</result>
 </action >
 
+<action name="personInfo" class="MemberAction" method="personInfo">
+<result>/cineplex/PersonInfo.jsp</result>
+</action>
+
 <action name="memberInfo" class="MemberAction">
 <result>/cineplex/MemberInfo.jsp</result>
 </action>

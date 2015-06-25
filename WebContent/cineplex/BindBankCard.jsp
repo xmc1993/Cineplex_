@@ -21,16 +21,15 @@
   <jsp:useBean id="user" type="xmc.cineplex.model.User" scope="session"></jsp:useBean>
 	<nav class="navbar navbar-inverse" role="navigation">
 	  <div class="navbar-header">
-      <a class="navbar-brand" href="">Cineplex</a>
+      <a class="navbar-brand" href="memHomePage.action">Cineplex</a>
    </div>
    <div>
       <ul class="nav navbar-nav">
-         <li class="active"><a href="#">首页</a></li>
+         <li class="active"><a href="memHomePage.action">首页</a></li>
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
-	  <li class="active"><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-user"></span><jsp:getProperty name="user" property="name"/></a></li>
+	  <li class="active"><a class="navbar-brand" href="personInfo.action"><span class="glyphicon glyphicon-user"></span><jsp:getProperty name="user" property="name"/></a></li>
 	  <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a><li>
-	  <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a><li>
 	  <li><a href="logout.action"><span class="glyphicon glyphicon-off"></span></a><li>
 	  <li><a>&nbsp </a></li>
 	  </ul>
