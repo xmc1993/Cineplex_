@@ -137,6 +137,7 @@
 </action>
 
 <action name="search" class="ServerAction" method="searchResult">
+<result name="noInfo">/cineplex/NoMemberInfoResult.jsp</result>
 <result>/cineplex/MemberInfoResult.jsp</result>
 </action>
 

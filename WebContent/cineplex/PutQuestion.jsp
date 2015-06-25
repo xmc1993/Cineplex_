@@ -63,12 +63,17 @@
 		</div>
 		<div class="form-group">
 		<p><label>匹配的放映计划：</label></p>
+	
 <%
+	out.print("&nbsp");
 	for(int i=0;i<planIdList.getPlanIdList().size();i++){
 		int planId=planIdList.getPlanIdList(i);
+		String s=String.valueOf(planId);
+		if(planId<10)
+			s="0"+s;
 %>
 			<label class="checkbox-inline">
-			<input type="checkbox" name="plan" value='<%out.print(planId);%>'/>放映计划<%out.print(planId);%>
+			<input type="checkbox" name="plan" value='<%out.print(planId);%>'/>放映计划<%out.print(s);%>
 			</label>
 <%
 	}

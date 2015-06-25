@@ -73,6 +73,11 @@ public class ServerAction extends BaseAction implements Action{
 		
 		int uid_=Integer.parseInt(uid);
 		Account account=accountServiceBean.getAccount(uid_);
+		
+		if(account==null){
+			return "noInfo";
+		}
+		
 		User user=(User)userServiceBean.getUserById(uid_);
 		List list=consumptionServiceBean.getAllRecord(uid_);
 		ConsumptionList consumptionList=new ConsumptionList();

@@ -40,8 +40,10 @@
 	<div class="row" style="height:40px">
 	</div >
 	<div class="row">
+	<div class="col-xs-2">
+	</div>
 	<!-- Tab的使用范围-->
-	<div class="col-xs-9">
+	<div class="col-xs-8">
 	<ul id="myTab" class="nav nav-tabs">
     <li class="active">
       <a href="#home" data-toggle="tab">
@@ -160,6 +162,8 @@
 	</div>
 	</div>
 	<!-- Tab的结束范围。 -->
+		<div class="col-xs-2">
+	</div>
 	</div>
 	</div>
   </body>

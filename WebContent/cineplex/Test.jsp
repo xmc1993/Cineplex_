@@ -81,7 +81,7 @@ span.seatCharts-legendDescription {margin-left: 5px;line-height: 30px;}
 			<p>总计：<b>￥<span id="total">0</span></b></p>
 			<input type="hidden" id="amount" name="amount" value=0 />
 			<input type="hidden" id="info" name="info" value="" />
-			<button type="submit" class="btn-block btn-lg btn-info" onclick="book()">确定购买</button>
+			<button type="submit" class="btn-block btn-lg btn-info" onclick="return book();">确定购买</button>
 			</form>		
 			<div id="legend"></div>
 		</div>
@@ -187,11 +187,17 @@ function recalculateTotal(sc) {
 
 function book(){
 	var ch=$('#selected-seats').children();
+	var count=ch.length;
+	if(count==0){
+		alert("您尚未选择任何电影票！");
+		return false;
+		}
 	var s="";
 	for(var i=0;i<ch.length;i++){
 		s=s+ch[i].innerText+",";
 	}
 	$('#info').val(s);
+	return true;
 }
 </script>
 

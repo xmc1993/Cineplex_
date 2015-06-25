@@ -140,6 +140,9 @@ public class AccountDaoImpl implements AccountDao {
 		Query query=getSession().createQuery(hql);
 		query.setInteger(0, uid);
 		List list=query.list();
+		if(list.size()==0){
+			return null;
+		}
 		Account account=(Account)list.get(0);
 		return account;
 	}
