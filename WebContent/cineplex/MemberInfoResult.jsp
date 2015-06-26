@@ -40,7 +40,20 @@
 	<div class="row" style="height:40px">
 	</div >
 	<div class="row">
-	<div class="col-xs-2">
+	<div class="col-xs-3" style="background-color:#FFFFFF">
+		<p></p>
+	<form role="form" method="post" action="search.action">
+		<legend><strong>查询用户信息</strong></legend>
+		<div class="form-group">
+		<label>请输入用户的Id：</label>
+		<input type="text" class="form-control" name="uid" placeholder="member's ID"/>
+		</div>
+		<button class="btn-block btn-lg btn-danger" type="submit">查询</button>
+	</form>
+		<p></p>
+		<br/>
+	</div>
+	<div class="col-xs-1">
 	</div>
 	<!-- Tab的使用范围-->
 	<div class="col-xs-8">
