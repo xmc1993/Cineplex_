@@ -19,7 +19,7 @@
    </div>
    <div>
       <ul class="nav navbar-nav">
-         <li class="active"><a href="#">首页</a></li>
+         <li class="active"><a href="adminHomePage.action">首页</a></li>
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
 	  <li class="active"><a class="navbar-brand" href="#"><span class="glyphicon glyphicon-user"></span> Administrator</a></li>
