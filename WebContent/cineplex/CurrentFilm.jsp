@@ -4,9 +4,8 @@
 <html>
 <head>
    <title>CurrentPlan</title>
-   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
    <link href="bootstrap/css/other.css" rel="stylesheet"/>
-   <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet"/>
    <script src="jquery/jquery-2.1.3.min.js"></script>
    <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
