@@ -24,8 +24,8 @@
    </div>
    <div>
       <ul class="nav navbar-nav">
-         <li class="active"><a href="memHomePage.action">首页</a></li>
-         <li><a href="memberInfo.action">账号信息</a></li>
+         <li ><a href="memHomePage.action">首页</a></li>
+         <li class="active"><a href="memberInfo.action">账号信息</a></li>
          <li><a href="enterAnswer.action">参与活动</a></li>
          <li><a href="enterRecharge.action">充值</a></li>
       </ul>

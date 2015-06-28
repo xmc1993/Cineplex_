@@ -47,7 +47,7 @@
 	<!--右边部分-->
 	<div class="col-xs-9">	
 		<div class="page-header">
-		<h1>最近上映的电影
+		<h1 style="color:#f3f3f3;">最近上映的电影
 		<small>（2015）</small>
 		</h1>
 		</div>
@@ -68,7 +68,7 @@
 				</div>
 				<div class="col-xs-9">
 				<ul>
-					<li class="list-group-item">影片名：<jsp:getProperty name="film" property="title"/></li>
+					<li class="list-group-item">片名：<jsp:getProperty name="film" property="title"/></li>
 					<li class="list-group-item">导演：<jsp:getProperty name="film" property="director"/></li>
 					<li class="list-group-item">时长：<jsp:getProperty name="film" property="duration"/></li>
 					<li class="list-group-item">语言：<jsp:getProperty name="film" property="language"/></li>
