@@ -22,7 +22,7 @@
    <div>
       <ul class="nav navbar-nav">
          <li class="active"><a href="adminHomePage.action">首页</a></li>
-         <li><a href="#">电影</a></li>
+         <li><a href="userSet.action">电影</a></li>
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
 	  <li class="active"><a class="navbar-brand" href="personInfo.action"><span class="glyphicon glyphicon-user"></span> Administrator</a></li>

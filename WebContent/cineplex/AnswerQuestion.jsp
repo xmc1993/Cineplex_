@@ -34,7 +34,7 @@
       </ul>
 	  <ul class="nav navbar-nav navbar-right">
 	  <li class="active"><a class="navbar-brand" href="personInfo.action"><span class="glyphicon glyphicon-user"></span><jsp:getProperty name="user" property="name"/></a></li>
-	  <li><a href="#"><span class="glyphicon glyphicon-cog"></span></a><li>
+	  <li><a href="userSet.action"><span class="glyphicon glyphicon-cog"></span></a><li>
 	  <li><a href="logout.action"><span class="glyphicon glyphicon-off"></span></a><li>
 	  <li><a>&nbsp </a></li>
 	  </ul>

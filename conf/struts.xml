@@ -111,6 +111,10 @@
 <result>/cineplex/PersonInfo.jsp</result>
 </action>
 
+<action name="userSet" class="MemberAction" method="userSet">
+<result>/cineplex/UserSet.jsp</result>
+</action>
+
 <action name="memberInfo" class="MemberAction">
 <result>/cineplex/MemberInfo.jsp</result>
 </action>

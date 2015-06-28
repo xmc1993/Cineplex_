@@ -51,6 +51,10 @@ public class MemberAction extends BaseAction  implements Action{
 		return SUCCESS;
 	}
 	
+	public String userSet(){
+		return SUCCESS;
+	}
+	
 	public String exchange(){
 		User user=(User)session.get("user");
 		Account account=accountServiceBean.getAccount(user.getId());
