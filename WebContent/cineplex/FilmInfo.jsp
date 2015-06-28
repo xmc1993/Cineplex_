@@ -76,7 +76,7 @@
 	<!--右边部分-->
 	<div class="col-xs-6">	
 	<div class="page-header">
-   <h1><jsp:getProperty name="plan" property="title"/>
+   <h1  style="color:#f1f1f1;"><jsp:getProperty name="plan" property="title"/>
       <small>（2015）</small>
    </h1>
 	</div>
